@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'php.runtime.launcher.Launcher'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':jphp-voice-recorder-ext')
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+
+    compile "org.develnext.jphp:jphp-core:${rootProject.ext.jphpVersion}"
+}
