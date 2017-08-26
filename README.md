@@ -9,6 +9,7 @@
 
 ### Пример
 
+#### VoiceRecorder
 ```php 
 use php\audio\VoiceRecorder; 
 
